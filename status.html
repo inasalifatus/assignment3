@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            {{.Title}}
+        </title>
+        <meta http-equiv="refresh" content="3" >
+    </head>
+    <body style="background-color:LightGray;">
+        <div style="border-color: #000000;
+        background-color: #FFFFFF;">
+       <marquee direction="left" width="250px"><h1>Auto Reload</h1></marquee> 
+            <h2>Water</h2>
+            <h3>Value : {{.Payload.Water}} m</h3>
+            <h3>Status : {{.Payload.WaterStatus}}</h3>
+            <h2>Wind</h2>
+            <h3>Value : {{.Payload.Wind}} m/s</h3>
+            <h3>Status : {{.Payload.WindStatus}}</h3>
+        </div>
+    </body>
+</html>
